@@ -1,0 +1,49 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.head {
+    font-size: 35px;
+    padding: 0;
+}
+
+.nav {
+    position:relative;
+}
+
+#search {
+    background-color:#F8F9FA;
+    float: left;
+    width: 30%;
+    height: 100%;
+    position:absolute;
+    padding: 25px;
+}
+
+#formInput {
+    padding-right: 10px;
+}
+
+#dash {
+    float:right;
+    background-color:#ffff;
+    position:absolute;
+    right:0;
+    height:100%;
+    width:70%;
+    clear:left;
+    padding:20px;
+}
+
+#cityName {
+    margin-bottom:30px;
+}
+
+.cityStats {
+    padding:20px;
+}
+
+#fiveDay {
+    margin:20px;
+
+}
