@@ -34,13 +34,13 @@
             <div class="input-group mb-3">
                 <input id="formInput" type="text" class="form-control" placeholder="" aria-label="Search for a city" aria-desbribedby="basic-addon1">
                 <div class="input-group-prepend">
-                    <button class ="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                    <button id="searchButton" class ="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
         <div>
             <ul class="list-group">
-                <!-- Will be dynamically adding list items here. <li class="list-group-item"></li> -->
+                <!-- Will be dynamically adding list items here. <a href="#" class="list-group-item list-group-item-action">City Name</a> -->
             
             </ul>
         </div>
@@ -56,13 +56,59 @@
         </div>
 
         <div class="container" id="fiveDay">
-            <h3>5-Day Forecast:</h3>
+            <h3 class="mb-3">5-Day Forecast:</h3>
             <div class="row">
                 <div class="col-md-2">
                     <div class="card">
                         <div class="card-body">
                             <h5 id="dayOne"class="card-title">Test</h5>
                             <p class="card-text"><span id="dayOneIcon"></span></p>
+                            <p class="card-text">Temp: <span id="dayOneTemp"></span></p>
+                            <p class="card-text">Humidity: <span id="dayOneHum"></span></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="dayTwo"class="card-title">Test</h5>
+                            <p class="card-text"><span id="dayTwoIcon"></span></p>
+                            <p class="card-text">Temp: <span id="dayTwoTemp"></span></p>
+                            <p class="card-text">Humidity: <span id="dayTwoHum"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="dayThree"class="card-title">Test</h5>
+                            <p class="card-text"><span id="dayThreeIcon"></span></p>
+                            <p class="card-text">Temp: <span id="dayThreeTemp"></span></p>
+                            <p class="card-text">Humidity: <span id="dayOneHum"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="dayFour"class="card-title">Test</h5>
+                            <p class="card-text"><span id="dayFourIcon"></span></p>
+                            <p class="card-text">Temp: <span id="dayFourTemp"></span></p>
+                            <p class="card-text">Humidity: <span id="dayOneHum"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="dayFive"class="card-title">Test</h5>
+                            <p class="card-text"><span id="dayFiveIcon"></span></p>
+                            <p class="card-text">Temp: <span id="dayOneTemp"></span></p>
+                            <p class="card-text">Humidity: <span id="dayFiveHum"></span></p>
                         </div>
                     </div>
                 </div>
@@ -72,7 +118,7 @@
         
     </section>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./Assets/script.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
 #search {
     background-color:#F8F9FA;
     float: left;
-    width: 30%;
+    width: 25%;
     height: 100%;
     position:absolute;
     padding: 25px;
@@ -30,7 +30,7 @@
     position:absolute;
     right:0;
     height:100%;
-    width:70%;
+    width:75%;
     clear:left;
     padding:20px;
 }
@@ -46,4 +46,9 @@
 #fiveDay {
     margin:20px;
 
+}
+
+.card {
+    background-color:#007BFE;
+    color: #ffff;
 }
