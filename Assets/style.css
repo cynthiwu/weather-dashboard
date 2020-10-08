@@ -39,8 +39,30 @@
     margin-bottom:30px;
 }
 
-.cityStats {
-    padding:20px;
+#currentUV {
+    color: #ffff;
+    border-radius: 15px;
+}
+
+.low {
+    background-color: #279500;
+    
+}
+
+.moderate {
+    background-color: #F8E500;
+}
+
+.high {
+    background-color:#F85A02;
+}
+
+.veryhigh {
+    background-color:#D70313;
+}
+
+.extreme {
+    background-color:#6B49C8;
 }
 
 #fiveDay {
