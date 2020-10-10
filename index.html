@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    
     <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
         crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link 
         rel="stylesheet" 
@@ -39,11 +40,10 @@
             </div>
         </div>
         <div>
-            <ul class="list-group">
-                <!-- Will be dynamically adding list items here. <a href="#" class="list-group-item list-group-item-action">City Name</a> -->
-            
+            <ul class="list-group">            
             </ul>
         </div>
+
     </section>
 
     <section id="dash">
@@ -52,7 +52,7 @@
             <p>Temperature: <span id="cityTemp"></span></p>
             <p>Humidity: <span id="cityHumid"></span></p>
             <p>Wind Speed: <span id="currentWind"></span></p>
-            <p>UV Index: <span id="currentUV" class="p-2"></span></p>
+            <p>UV Index: <span id="currentUV"></span></p>
         </div>
 
         <div class="container" id="fiveDay">
@@ -61,19 +61,18 @@
                 <div class="col-md-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 id="dayOne"class="card-title">Test</h5>
-                            <p class="card-text"><span id="dayOneIcon"></span></p>
+                            <h5 id="dayOne"class="card-title"></h5>
+                            <p class="card-text fiveIcon"></p>
                             <p class="card-text">Temp: <span id="dayOneTemp"></span></p>
                             <p class="card-text">Humidity: <span id="dayOneHum"></span></p>
-                            
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 id="dayTwo"class="card-title">Test</h5>
-                            <p class="card-text"><span id="dayTwoIcon"></span></p>
+                            <h5 id="dayTwo"class="card-title"></h5>
+                            <p class="card-text fiveIcon"></p>
                             <p class="card-text">Temp: <span id="dayTwoTemp"></span></p>
                             <p class="card-text">Humidity: <span id="dayTwoHum"></span></p>
                         </div>
@@ -83,10 +82,10 @@
                 <div class="col-md-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 id="dayThree"class="card-title">Test</h5>
-                            <p class="card-text"><span id="dayThreeIcon"></span></p>
+                            <h5 id="dayThree"class="card-title"></h5>
+                            <p class="card-text fiveIcon"></p>
                             <p class="card-text">Temp: <span id="dayThreeTemp"></span></p>
-                            <p class="card-text">Humidity: <span id="dayOneHum"></span></p>
+                            <p class="card-text">Humidity: <span id="dayThreeHum"></span></p>
                         </div>
                     </div>
                 </div>
@@ -94,10 +93,10 @@
                 <div class="col-md-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 id="dayFour"class="card-title">Test</h5>
-                            <p class="card-text"><span id="dayFourIcon"></span></p>
+                            <h5 id="dayFour"class="card-title"></h5>
+                            <p class="card-text fiveIcon"></p>
                             <p class="card-text">Temp: <span id="dayFourTemp"></span></p>
-                            <p class="card-text">Humidity: <span id="dayOneHum"></span></p>
+                            <p class="card-text">Humidity: <span id="dayFourHum"></span></p>
                         </div>
                     </div>
                 </div>
@@ -105,17 +104,15 @@
                 <div class="col-md-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 id="dayFive"class="card-title">Test</h5>
-                            <p class="card-text"><span id="dayFiveIcon"></span></p>
-                            <p class="card-text">Temp: <span id="dayOneTemp"></span></p>
+                            <h5 id="dayFive"class="card-title"></h5>
+                            <p class="card-text fiveIcon"></p>
+                            <p class="card-text">Temp: <span id="dayFiveTemp"></span></p>
                             <p class="card-text">Humidity: <span id="dayFiveHum"></span></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        
     </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
