@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
     
     <link
         rel="stylesheet"
@@ -59,55 +59,55 @@
             <h3 class="mb-3">5-Day Forecast:</h3>
             <div class="row">
                 <div class="col-md-2">
-                    <div class="card">
+                    <div class="card my-1">
                         <div class="card-body">
-                            <h5 id="dayOne"class="card-title"></h5>
+                            <h5 class="card-title"></h5>
                             <p class="card-text fiveIcon"></p>
-                            <p class="card-text">Temp: <span id="dayOneTemp"></span></p>
-                            <p class="card-text">Humidity: <span id="dayOneHum"></span></p>
+                            <p class="card-text">Temp: <span class="card-temp"></span></p>
+                            <p class="card-text">Humidity: <span class="card-hum"></span></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="card">
+                    <div class="card my-1">
                         <div class="card-body">
-                            <h5 id="dayTwo"class="card-title"></h5>
+                            <h5 class="card-title"></h5>
                             <p class="card-text fiveIcon"></p>
-                            <p class="card-text">Temp: <span id="dayTwoTemp"></span></p>
-                            <p class="card-text">Humidity: <span id="dayTwoHum"></span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 id="dayThree"class="card-title"></h5>
-                            <p class="card-text fiveIcon"></p>
-                            <p class="card-text">Temp: <span id="dayThreeTemp"></span></p>
-                            <p class="card-text">Humidity: <span id="dayThreeHum"></span></p>
+                            <p class="card-text">Temp: <span class="card-temp"></span></p>
+                            <p class="card-text">Humidity: <span class="card-hum"></span></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-2">
-                    <div class="card">
+                    <div class="card my-1">
                         <div class="card-body">
-                            <h5 id="dayFour"class="card-title"></h5>
+                            <h5 class="card-title"></h5>
                             <p class="card-text fiveIcon"></p>
-                            <p class="card-text">Temp: <span id="dayFourTemp"></span></p>
-                            <p class="card-text">Humidity: <span id="dayFourHum"></span></p>
+                            <p class="card-text">Temp: <span class="card-temp"></span></p>
+                            <p class="card-text">Humidity: <span class="card-hum"></span></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-2">
-                    <div class="card">
+                    <div class="card my-1">
                         <div class="card-body">
-                            <h5 id="dayFive"class="card-title"></h5>
+                            <h5 class="card-title"></h5>
                             <p class="card-text fiveIcon"></p>
-                            <p class="card-text">Temp: <span id="dayFiveTemp"></span></p>
-                            <p class="card-text">Humidity: <span id="dayFiveHum"></span></p>
+                            <p class="card-text">Temp: <span class="card-temp"></span></p>
+                            <p class="card-text">Humidity: <span class="card-hum"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text fiveIcon"></p>
+                            <p class="card-text">Temp: <span class="card-temp"></span></p>
+                            <p class="card-text">Humidity: <span class="card-hum"></span></p>
                         </div>
                     </div>
                 </div>
@@ -115,6 +115,27 @@
         </div>
     </section>
 
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Invalid Entry</h4>
+            </div>
+              <div class="modal-body">
+                Please enter a valid city name.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="./Assets/script.js"></script>
