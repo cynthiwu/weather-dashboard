@@ -15,15 +15,14 @@ const searchedCities = JSON.parse(localStorage.getItem("cities")) || [];
 if (searchedCities.length === 0) {
     weatherSearch("SEATTLE");
     console.log("hello");
-}
+};
 
 if (searchedCities.length > 0) {
     weatherSearch(searchedCities[searchedCities.length - 1]);
-    $.each(searchedCities, function(i, value){
+    $.each(searchedCities, function(i, value) {
         addListItem(value);
-    })
+    });
 };
-
 
 // Function to validate the search input, preventing empty string. 
 
@@ -33,8 +32,7 @@ function searchCity() {
     
     //Preventing no answer
     if (userInput === "") {
-        alert("Please enter a valid city name.");
-        // $('#myModal').modal("show"); Unhide and update the zindex/tabindex. Display none to start. 
+        $("#myModal").modal("show");
     }
         else {
         weatherSearch(userInput);
@@ -87,9 +85,9 @@ function weatherSearch(city) {
         else {
             citynameEl.text("Invalid City");
         }
-    })
+    });
     
-}
+};
 
 function getUVindex(lat, lon) {
     $.ajax({
@@ -124,8 +122,8 @@ function getUVindex(lat, lon) {
         console.log(error);
         let currentUV = $("#currentUV");
         currentUV.text("N/A");
-    })
-}
+    });
+};
 
 // Ajax call for the 5 day weather forecast. 
 
@@ -151,7 +149,7 @@ function getFiveDay(city) {
             let icon = response.list[index].weather[0].icon;
             let iconURL = "http://openweathermap.org/img/w/" + icon + ".png";
             let newIcon = $("<img>");
-            newIcon.attr({src: iconURL, alt: "Five day forecast weather icon."})
+            newIcon.attr({src: iconURL, alt: "Five day forecast weather icon."});
             $(this).html(newIcon);
         });
        
