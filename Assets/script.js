@@ -44,7 +44,7 @@ function searchCity() {
 function weatherSearch(city) {
 
     $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=31b6d28ef47d7d3a64ddd0263f83b5c2",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=31b6d28ef47d7d3a64ddd0263f83b5c2",
         method: "GET",
         crossDomain: true,
         dataType: 'jsonp',
@@ -59,7 +59,7 @@ function weatherSearch(city) {
 
         // Creating image element to hold today's weather icon.
         let icon = response.weather[0].icon;
-        let iconURL = "http://openweathermap.org/img/w/" + icon + ".png";
+        let iconURL = "https://openweathermap.org/img/w/" + icon + ".png";
         let newIcon = $("<img>");
         newIcon.attr({src: iconURL, alt: "Today's weather icon."})
         citynameEl.append(newIcon);
@@ -91,7 +91,7 @@ function weatherSearch(city) {
 
 function getUVindex(lat, lon) {
     $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=31b6d28ef47d7d3a64ddd0263f83b5c2",
+        url: "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=31b6d28ef47d7d3a64ddd0263f83b5c2",
         method: "GET",
         crossDomain: true,
     }).then(function(response) {
@@ -129,7 +129,7 @@ function getUVindex(lat, lon) {
 
 function getFiveDay(city) {
     $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=31b6d28ef47d7d3a64ddd0263f83b5c2",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=31b6d28ef47d7d3a64ddd0263f83b5c2",
         method: "GET",
         crossDomain: true,
         dataType: 'jsonp',
@@ -147,7 +147,7 @@ function getFiveDay(city) {
         let fiveIcon = $(".fiveIcon");
         fiveIcon.each(function(index) {
             let icon = response.list[index].weather[0].icon;
-            let iconURL = "http://openweathermap.org/img/w/" + icon + ".png";
+            let iconURL = "https://openweathermap.org/img/w/" + icon + ".png";
             let newIcon = $("<img>");
             newIcon.attr({src: iconURL, alt: "Five day forecast weather icon."});
             $(this).html(newIcon);
